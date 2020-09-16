@@ -245,7 +245,7 @@ class KarmanVortex(BaseFlow):
 
         ## Left side of obstacle
         if obstacle_x_left in global_x_range:
-            local_x_index = global_x_range.index(obstacle_x_left)
+            local_x_index = global_x_range.index(obstacle_x_left) + 1
             # contains 1,2,3
             if obstacle_y_top in global_y_range and obstacle_y_bottom in global_y_range:
                 local_y_top = global_y_range.index(obstacle_y_top) + 1
@@ -291,7 +291,7 @@ class KarmanVortex(BaseFlow):
             
         ## Right side of obstacle
         if obstacle_x_right in global_x_range:
-            local_x_index = global_x_range.index(obstacle_x_right)
+            local_x_index = global_x_range.index(obstacle_x_right) + 1
             # contains 4,5,6
             if obstacle_y_top in global_y_range and obstacle_y_bottom in global_y_range:
                 local_y_top = global_y_range.index(obstacle_y_top) + 1
